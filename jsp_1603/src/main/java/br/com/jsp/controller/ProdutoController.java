@@ -10,11 +10,11 @@ import models.ProdutoServiceImpl;
 public class ProdutoController {
 	
 	@Autowired
-	ProdutoServiceImpl produtoService;
+	ProdutoServiceImpl produtoManager;
 	
 	@RequestMapping("/produtos")
 	public String todos(Model model) {
-	model.addAttribute("produtos", produtoService.obterTodos());
+		model.addAttribute("produtos", produtoManager.obterTodos());
 		return "produtos";
 	} 
 }

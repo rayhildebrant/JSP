@@ -2,12 +2,14 @@ package models;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+@Component
 @Service
-public class ProdutoManagerImpl implements ProdutoManager {
+public class ProdutoServiceImpl implements ProdutoService {
 	@Autowired
-	private ProdutoRepository produtoRepository;
+	ProdutoRepository produtoRepository;
 
 	@Override
 	public List<Produto> obterTodos() {

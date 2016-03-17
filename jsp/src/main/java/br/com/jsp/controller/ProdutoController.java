@@ -5,16 +5,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import models.ProdutoManager;
+import models.ProdutoService;
 
 @Controller
 public class ProdutoController {
 	@Autowired
-	private ProdutoManager produtoManager;
+	ProdutoService produtoService;
 	
 	@RequestMapping("/produtos")
 	public String todos(Model model) {
-		model.addAttribute("produtos", produtoManager.obterTodos());
+		model.addAttribute("produtos", produtoService.obterTodos());
 		return "produtos";
 	}
 	
