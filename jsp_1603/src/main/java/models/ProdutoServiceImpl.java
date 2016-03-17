@@ -5,9 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ProdutoManagerImpl implements ProdutoManager {
+public class ProdutoServiceImpl implements ProdutoService {
 	@Autowired
-	private ProdutoRepository produtoRepository;
+	ProdutoRepository produtoRepository;
 
 	@Override
 	public List<Produto> obterTodos() {

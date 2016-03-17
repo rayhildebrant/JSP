@@ -2,6 +2,6 @@ package models;
 
 import java.util.List;
 
-public interface ProdutoManager {
+public interface ProdutoService {
 	List<Produto> obterTodos();
 }
