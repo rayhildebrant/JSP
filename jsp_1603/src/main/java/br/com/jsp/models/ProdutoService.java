@@ -1,4 +1,4 @@
-package models;
+package br.com.jsp.models;
 
 import java.util.List;
 

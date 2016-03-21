@@ -14,6 +14,5 @@
 			<li><a href="detalhe/${produto.id}">${produto.nome}</a></li>
 		</c:forEach>
 	</ul>
-	<p>teste</p>
 </body>
 </html>
