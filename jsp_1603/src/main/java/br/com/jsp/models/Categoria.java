@@ -3,12 +3,10 @@ package br.com.jsp.models;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Produto {
-	
+public class Categoria {
 	private long id;
 	private String nome;
-	private Number preco;
-	private Categoria categoria;
+	
 	
 	public long getId() {
 		return id;
@@ -22,16 +20,6 @@ public class Produto {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public Number getPreco() {
-		return preco;
-	}
-	public void setPreco(Number preco) {
-		this.preco = preco;
-	}
-	public Categoria getCategoria() {
-		return categoria;
-	}
-	public void setCategoria(Categoria categoria) {
-		this.categoria = categoria;
-	}
+	
+	
 }

@@ -14,4 +14,14 @@ public class ProdutoServiceImpl implements ProdutoService {
 		return produtoRepository.obterTodos();
 	}
 
+	@Override
+	public Produto obterPorId(long id) {
+		return produtoRepository.obterPorId(id);
+	}
+
+	@Override
+	public List<Produto> obterPorCategoria(long id) {
+		return produtoRepository.obterPorCategoria(id);
+	}
+
 }
