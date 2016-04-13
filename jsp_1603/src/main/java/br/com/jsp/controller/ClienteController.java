@@ -22,16 +22,15 @@ public class ClienteController {
 		return "redirect:/clientes/novo-sucesso";
 	}
 	
-	@RequestMapping("/clientes/novo-sucesso")
-	public String sucesso () {
-		return "cliente-novo-sucesso";
-	}
-	
 	@RequestMapping(value="/clientes/novo",	method=RequestMethod.GET)
 	public String novo (Model model) {
 		model.addAttribute("clientemv", new ClienteModelView());
 		return "cliente-novo";
 	}
 	
+	@RequestMapping("/clientes/novo-sucesso")
+	public String novoSucesso () {
+		return "cliente-novo-sucesso";
+	}	
 
 }
